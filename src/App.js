@@ -9,6 +9,7 @@ Amplify.configure(awsconfig);
 
 function App() {
   
+// this data is used for amplify configurations,don't mess with this
   Analytics.autoTrack('session', {
     enable: true,
     provider: 'AWSPinpoint'
@@ -80,7 +81,6 @@ Analytics.record({
       <h1 class = "text-xl">{count}</h1>
     </div>
   );
-  
 }
 
 export default App;
